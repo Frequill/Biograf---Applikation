@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.StaffScreenController">
+   <children>
+      <Label alignment="CENTER" layoutX="297.0" layoutY="14.0" prefHeight="120.0" prefWidth="192.0" text="Personal" textAlignment="CENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="629.0" layoutY="496.0" mnemonicParsing="false" onAction="#addShift" prefHeight="91.0" prefWidth="158.0" text="Arbetspass" wrapText="true" />
+      <Button layoutX="278.0" layoutY="526.0" mnemonicParsing="false" onAction="#getStaffById" prefHeight="60.0" prefWidth="158.0" text="Hämta personal per ID" />
+      <Button layoutX="314.0" layoutY="109.0" mnemonicParsing="false" onAction="#getAllStaff" prefHeight="25.0" prefWidth="158.0" text="Visa all anställd personal" />
+      <Button layoutX="114.0" layoutY="526.0" mnemonicParsing="false" onAction="#addStaff" prefHeight="60.0" prefWidth="158.0" text="Lägg till personal" />
+      <Button layoutX="442.0" layoutY="526.0" mnemonicParsing="false" onAction="#deleteStaffById" prefHeight="60.0" prefWidth="158.0" text="Ta bort personal" />
+      <Button contentDisplay="CENTER" layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#goToAdminScreen" text="Tillbaka" />
+      <TextField fx:id="IdInputField" layoutX="278.0" layoutY="496.0" prefHeight="25.0" prefWidth="158.0" promptText="Fyll i staff_ID" />
+      <TextField fx:id="deleteField" layoutX="442.0" layoutY="496.0" prefHeight="25.0" prefWidth="158.0" promptText="Fyll i ID som ska tas bort" />
+      <TextArea fx:id="staffInfoTextField" layoutX="9.0" layoutY="146.0" prefHeight="334.0" prefWidth="782.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.CustomerScreenController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="60.0" prefHeight="23.0" prefWidth="286.0" text="Inloggning">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="existingUserLoginTextField" layoutX="260.0" layoutY="98.0" prefHeight="27.0" prefWidth="286.0" promptText="Emailadress.." />
+      <PasswordField fx:id="existingUserPWTextField" layoutX="260.0" layoutY="134.0" prefHeight="26.0" prefWidth="286.0" promptText="Lösenord.." />
+      <Button layoutX="324.0" layoutY="178.0" mnemonicParsing="false" onAction="#existingUserLogin" prefHeight="49.0" prefWidth="152.0" text="Logga in" />
+      <TextField fx:id="newUserEmailTextField" layoutX="257.0" layoutY="416.0" prefHeight="27.0" prefWidth="286.0" promptText="Emailadress.." />
+      <PasswordField fx:id="newUserPWTextField" layoutX="257.0" layoutY="487.0" prefHeight="26.0" prefWidth="286.0" promptText="Lösenord.." />
+      <Button layoutX="327.0" layoutY="513.0" mnemonicParsing="false" onAction="#createNewUser" prefHeight="49.0" prefWidth="152.0" text="Skapa ny användare" />
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#goToStartScreen" text="Tillbaka" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="294.0" prefHeight="49.0" prefWidth="286.0" text="Skapa ny användare">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="newUserCreditcardTextField" layoutX="257.0" layoutY="451.0" prefHeight="27.0" prefWidth="286.0" promptText="Kortnummer.." />
+      <TextField fx:id="newUserNameTextField" layoutX="257.0" layoutY="382.0" prefHeight="27.0" prefWidth="286.0" promptText="Namn.." />
+      <Label fx:id="newUserAddedTextField" layoutX="257.0" layoutY="567.0" prefHeight="18.0" prefWidth="286.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="257.0" layoutY="343.0" prefHeight="23.0" prefWidth="286.0" text="Inga svenska bokstäver, tack">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="newUserConfirmedLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="208.0" layoutY="567.0" prefHeight="18.0" prefWidth="390.0" />
+      <Label fx:id="existingUserConfirmedLabel1" alignment="CENTER" contentDisplay="CENTER" layoutX="262.0" layoutY="234.0" prefHeight="18.0" prefWidth="277.0" />
+      <Label fx:id="logInErrorMsgLabel" layoutX="301.0" layoutY="237.0" prefHeight="30.0" prefWidth="198.0" />
+   </children>
+</AnchorPane>

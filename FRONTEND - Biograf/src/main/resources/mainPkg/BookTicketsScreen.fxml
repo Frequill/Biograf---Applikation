@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.BookTicketsScreenController">
+   <children>
+      <TextArea fx:id="upcommingScreeningsTextArea" layoutX="135.0" layoutY="341.0" prefHeight="245.0" prefWidth="538.0" />
+      <Button layoutX="333.0" layoutY="164.0" mnemonicParsing="false" onAction="#bookTickets" prefHeight="44.0" prefWidth="143.0" text="Bekräfta!" />
+      <TextField fx:id="movieIDTextField" layoutX="333.0" layoutY="107.0" prefHeight="25.0" prefWidth="143.0" promptText="Movie_ID..." />
+      <TextField fx:id="amountOfTicketsTextField" layoutX="333.0" layoutY="134.0" prefHeight="25.0" prefWidth="143.0" promptText="Antal önskade biljetter..." />
+      <Label alignment="CENTER" layoutX="238.0" layoutY="63.0" prefHeight="44.0" prefWidth="325.0" text="Boka biljetter">
+         <font>
+            <Font name="Georgia" size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="561.0" mnemonicParsing="false" onAction="#goToLoggedInUserScreen" text="Tillbaka" />
+      <Label fx:id="bookingCompletedMessageLabel" alignment="CENTER" layoutX="225.0" layoutY="234.0" prefHeight="44.0" prefWidth="359.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="283.0" layoutY="307.0" prefHeight="34.0" prefWidth="234.0" text="Alla kommande visningar:">
+         <font>
+            <Font name="Constantia Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainPkg.StartScreenController">
+   <children>
+      <Button layoutX="349.0" layoutY="567.0" mnemonicParsing="false" onAction="#showAdminScene" prefHeight="25.0" prefWidth="102.0" text="Administrera" />
+      <Button layoutX="275.0" layoutY="245.0" mnemonicParsing="false" onAction="#showCustomerScene" prefHeight="111.0" prefWidth="250.0" text="Logga in">
+         <font>
+            <Font name="Constantia Italic" size="41.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="133.0" layoutY="152.0" prefHeight="74.0" prefWidth="534.0" text="Välkommen till Ishockey-Biograf!" textAlignment="CENTER">
+         <font>
+            <Font name="Impact" size="35.0" />
+         </font></Label>
+      <Button layoutX="31.0" layoutY="547.0" mnemonicParsing="false" onAction="#quitProgram" prefHeight="25.0" prefWidth="102.0" text="Avsluta..." />
+      <Button alignment="CENTER" layoutX="684.0" layoutY="547.0" mnemonicParsing="false" onAction="#testConnection" text="Test Connection" />
+      <PasswordField fx:id="secretPasswordTextField" layoutX="349.0" layoutY="535.0" prefHeight="25.0" prefWidth="102.0" promptText="Admin lösen..." />
+      <Label layoutX="235.0" layoutY="14.0" text="Ett program av Julius Thomsen, Patrik Selberg och Niklas Jeng!" />
+      <Label fx:id="connectionMessageLabel" alignment="CENTER" layoutX="650.0" layoutY="571.0" prefHeight="17.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
